@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://antoine_baesen.github.io/nsi/Seconde/PhotographieNumerique/CoursPhotographieNumerique/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Imagerie numérique - CoursNsi</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">CoursNsi</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../" class="nav-link">SNT Seconde</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Premiere/" class="nav-link">NSI Première</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Terminale/" class="nav-link">NSI Terminale</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#imagerie-numerique" class="nav-link">Imagerie numérique</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#quest-ce-quun-pixel" class="nav-link">Qu'est ce qu'un Pixel ?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#composition-dune-image" class="nav-link">Composition d'une image</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#les-formats-dimage" class="nav-link">Les formats d'image</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#resolution-dune-image" class="nav-link">Résolution d'une image</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#pour-aller-plus-loin" class="nav-link">Pour aller plus loin</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="imagerie-numerique">Imagerie numérique</h1>
+<h2 id="introduction">Introduction</h2>
+<h3 id="un-peu-dhistoire">Un peu d'histoire</h3>
+<p>L'imagerie numérique est apparue dans les années 70. Elle a été rendue possible par l'invention du capteur CCD (Charge-Coupled Device) par Willard Boyle et George Smith. Ce capteur est capable de convertir une image en un signal électrique. Ce signal peut ensuite être numérisé et stocké dans un ordinateur.</p>
+<p>Le premier appareil photo numérique a été inventé en 1975 par Steven Sasson. Il pesait 3,6 kg et avait une résolution de 0,01 mégapixels. Il fallait 23 secondes pour prendre une photo et 23 secondes pour l'afficher sur un téléviseur. Il fallait ensuite 23 secondes pour effacer la photo et pouvoir prendre une nouvelle photo. La photo était stockée sur une cassette audio. Il fallait 50 secondes pour transférer la photo sur un ordinateur.</p>
+<p>Aujourd'hui, les appareils photo numériques sont beaucoup plus performants. Ils sont capables de prendre des photos de plusieurs dizaines de mégapixels en quelques millisecondes. Ils sont capables de prendre des vidéos en 4K à 60 images par seconde.</p>
+<h2 id="quest-ce-quun-pixel">Qu'est ce qu'un Pixel ?</h2>
+<p>Un pixel est un point de l'image. Il est défini par sa position et sa couleur. Sa valeur représente la couleur du pixel. Plus la valeur est grande, plus le pixel est clair. Plus la valeur est petite, plus le pixel est foncé. La valeur d'un pixel dépend du mode de représentation de l'image.</p>
+<h3 id="noir-et-blanc">Noir et blanc</h3>
+<p><img alt="noir et blanc" src="../noir_et_blanc.jpg" /></p>
+<p>Pour représenter une image uniquement en noir et blanc, on n'a pas besoin de beaucoup de valeurs différentes. On peut utiliser un seul bit pour représenter la couleur d'un pixel.</p>
+<p><em>Comment pourrait-on représenter ça en mémoire ?</em></p>
+<p>...............................................................................................................................................</p>
+<h3 id="niveaux-de-gris">Niveaux de gris</h3>
+<p><img alt="niveaux de gris" src="../niveaux_de_gris.jpg" /></p>
+<p>On veut maintenant représenter une image en différents niveaux de gris on a donc besoin de plus de valeurs différentes. On aura besoin d'utiliser 8 bits pour représenter la couleur d'un pixel.</p>
+<p><em>Comment pourrait-on représenter ça en mémoire ?</em></p>
+<p>...............................................................................................................................................</p>
+<h3 id="couleurs">Couleurs</h3>
+<p><img alt="couleurs" src="../couleurs.jpg" /></p>
+<p>Enfin, pour des images en couleurs, on a besoin de beaucoup de valeurs différentes. On peut utiliser 24 bits pour représenter la couleur d'un pixel. On utilise généralement 8 bits pour chaque couleur primaire (rouge, vert, bleu). On appelle ce mode de représentation RVB (Rouge, Vert, Bleu). Dans ce cas chaque couleur est représentée par un nombre entre 0 et 255. On ne peut donc représenter qu'un nombre limité de couleurs mais c'est suffisant pour l'oeil humain.</p>
+<blockquote>
+<p>Exemple :
+🟥 correspondrait à un pixel de valeur (255, 0, 0) ;
+🟩 correspondrait à un pixel de valeur (0, 255, 0) ;
+🟦 correspondrait à un pixel de valeur (0, 0, 255) ;</p>
+</blockquote>
+<h2 id="composition-dune-image">Composition d'une image</h2>
+<p>Une image numérique est une matrice de pixels. On peut imaginer une image comme un tableau à deux dimensions. Chaque case du tableau correspond à un pixel. La taille du tableau correspond à la taille de l'image. La valeur de chaque case correspond à la couleur du pixel.</p>
+<p><em>Exemple :</em></p>
+<pre><code class="language-md">⬛⬛⬛⬛
+⬛🟥🟥⬛
+🟥🟨🟨🟥
+🟨🟨🟨🟨
+</code></pre>
+<p><em>représente une petite image de 4x4 pixels.</em>
+<em>Cette image correspond en fait aux valeurs suivantes :</em></p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">(0, 0, 0)</td>
+<td align="center">(0, 0, 0)</td>
+<td align="center">(0, 0, 0)</td>
+<td align="center">(0, 0, 0)</td>
+</tr>
+<tr>
+<td align="center">(0, 0, 0)</td>
+<td align="center">(255, 0, 0)</td>
+<td align="center">(255, 0, 0)</td>
+<td align="center">(0, 0, 0)</td>
+</tr>
+<tr>
+<td align="center">(255, 0, 0)</td>
+<td align="center">(255, 255, 0)</td>
+<td align="center">(255, 255, 0)</td>
+<td align="center">(255, 0, 0)</td>
+</tr>
+<tr>
+<td align="center">(255, 255, 0)</td>
+<td align="center">(255, 255, 0)</td>
+<td align="center">(255, 255, 0)</td>
+<td align="center">(255, 255, 0)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Plus il y a de pixels, plus l'image est détaillée. La taille d'une image est exprimée en pixels. Par exemple, une image de 1920x1080 pixels contient 1920 pixels en largeur et 1080 pixels en hauteur.</p>
+</blockquote>
+<p>Pour tester le fonctionnement d'une image numérique, vous pouvez utiliser le site suivant : <a href="http://www.proftnj.com/RGB3.htm">http://www.proftnj.com/RGB3.htm</a></p>
+<h3 id="questions-1"><strong>Questions 1</strong></h3>
+<p>Combien de couleurs différentes peut-on former avec un pixel RVB ?</p>
+<p>...............................................................................................................................................</p>
+<h3 id="questions-2"><strong>Questions 2</strong></h3>
+<p>Comment Obtenir un pixel :</p>
+<ul>
+<li>Jaune ?</li>
+<li>Violet ?</li>
+<li>Blanc ?</li>
+</ul>
+<h2 id="les-formats-dimage">Les formats d'image</h2>
+<p>Il existe de nombreux formats d'image. Chaque format a ses avantages et ses inconvénients. Certains formats sont plus adaptés pour le stockage, d'autres pour l'affichage, d'autres pour la compression, etc.</p>
+<h3 id="les-formats-dimage-sans-perte"><strong>Les formats d'image sans perte</strong></h3>
+<p>Les formats d'image sans perte sont des formats qui ne modifient pas les données de l'image. Ils sont donc adaptés pour le stockage et la transmission. Ils sont cependant moins efficaces que les formats avec perte pour la compression.</p>
+<p>Les formats d'image sans perte les plus connus sont : BMP, PNG</p>
+<h3 id="les-formats-dimage-avec-perte"><strong>Les formats d'image avec perte</strong></h3>
+<p>Les formats d'image avec perte sont des formats qui modifient les données de l'image pour les stocker plus efficacement. Mais ils perdent de l'information. Ils sont donc moins adaptés pour le stockage et la transmission. Ils sont cependant plus efficaces que les formats sans perte pour la compression.</p>
+<p>Les formats d'image avec perte les plus connus sont : JPG, WEBP</p>
+<h3 id="les-formats-dimage-vectoriels"><strong>Les formats d'image vectoriels</strong></h3>
+<p>Les formats d'image vectoriels ne stockent pas les pixels de l'image. Ils stockent des formules mathématiques qui permettent de générer l'image. On peut donc agrandir une image vectorielle sans perte de qualité. On peut imaginer une image vectorielle comme une image composée de formes géométriques.</p>
+<p>Les formats d'image vectoriels les plus connus sont : SVG, EPS, PDF</p>
+<h2 id="resolution-dune-image">Résolution d'une image</h2>
+<p>La résolution d'une image correspond au nombre de pixels par unité de longueur. Elle est exprimée en pixels par pouce (ppp ou dpi en anglais). Plus la résolution est élevée, plus l'image est détaillée.</p>
+<p><img alt="resolution" src="../resolution.jpg" /></p>
+<blockquote>
+<p>(resolution en ppp) = (nombre de pixels) / (taille en pouces</p>
+</blockquote>
+<p>Par exemple, une image de 1920x1080 pixels avec une résolution de 72 ppp aura une taille de 26,67x15 cm. Si on augmente la résolution à 300 ppp, la taille de l'image sera de 16,26x9,14 cm.</p>
+<h3 id="question-3"><strong>Question 3</strong></h3>
+<p>Quelle est la résolution de l'image <code>Exercice1.jpg</code> si on l'imprime en 5,08 x 5,08 cm ?</p>
+<p>Rappel : 1 pouce = 2,54 cm</p>
+<p>.......................................................................................................................................................</p>
+<h3 id="question-4"><strong>Question 4</strong></h3>
+<p>Comment obtenir une resolution de 300 ppp pour l'image <code>Exercice1.jpg</code> ?</p>
+<p>.......................................................................................................................................................</p>
+<h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
+<h3 id="meta-donnees">Meta données</h3>
+<p>Les métadonnées sont des informations sur un fichier qui permettent de préciser des informations supplémentaires sur le fichier. Par exemple, les métadonnées d'une image peuvent contenir des informations sur l'appareil photo qui a pris la photo, la date de prise de vue, la localisation, etc.</p>
+<p>Les métadonnées sont stockées dans le fichier. Elles peuvent être lues et modifiées par des logiciels.</p>
+<h3 id="question-5">Question 5</h3>
+<p>Notez les métadonnées de l'image <code>Exercice1.jpg</code></p>
+<blockquote>
+<p>La façon la plus simple de voir les métadonnées d'une image c'est d'ouvrir les paramètres de l'image :
+<code>clic droit</code>
+<code>paramètres</code></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">Données</th>
+<th align="center">Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Dimention de l'image</td>
+<td align="center">...</td>
+</tr>
+<tr>
+<td align="center">Propriétaire</td>
+<td align="center">...</td>
+</tr>
+<tr>
+<td align="center">Format de fichier</td>
+<td align="center">...</td>
+</tr>
+<tr>
+<td align="center">Date de création</td>
+<td align="center">...</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

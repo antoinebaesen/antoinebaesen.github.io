@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://antoine_baesen.github.io/nsi/Seconde/PhotographieNumerique/exercices/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Exercices : Photographie numérique - CoursNsi</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">CoursNsi</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../" class="nav-link">SNT Seconde</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Premiere/" class="nav-link">NSI Première</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../../Terminale/" class="nav-link">NSI Terminale</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#exercices-photographie-numerique" class="nav-link">Exercices : Photographie numérique</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#exercice-1" class="nav-link">Exercice 1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exercice-2" class="nav-link">Exercice 2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exercice-3" class="nav-link">Exercice 3</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exercice-4" class="nav-link">Exercice 4</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#exercice-5" class="nav-link">Exercice 5</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ressources" class="nav-link">Ressources</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="exercices-photographie-numerique">Exercices : Photographie numérique</h1>
+<h2 id="exercice-1">Exercice 1</h2>
+<blockquote>
+<p>Pour utiliser une image dans un programme python on peut utiliser la bibliothèque PIL (Python Imaging Library). Cette bibliothèque permet de lire et d'écrire des images dans de nombreux formats.</p>
+</blockquote>
+<p>Pour installer la bibliothèque PIL, il faut taper la commande suivante dans un terminal :</p>
+<pre><code class="language-bash">pip install pillow
+</code></pre>
+<p>Dans Thonny, il faut aller dans le menu <code>Outils</code> puis <code>Gérer les paquets</code> et taper <code>pillow</code> dans la zone de recherche.</p>
+<p>Voici un exemple d'utilisation de la bibliothèque PIL pour lire une image :</p>
+<pre><code class="language-python">from PIL import Image
+
+# Charger l'image à partir du fichier
+image = Image.open('Exercice1.jpg')
+
+# Afficher les dimensions de l'image
+print(image.size)
+
+# Afficher le premier pixel de l'image
+print(image.getpixel((0, 0)))
+
+# Modifier le premier pixel de l'image
+image.putpixel((0, 0), (255, 0, 0))
+
+# Sauvegarder l'image modifiée dans un nouveau fichier
+image.save('Exercice1_resultat.jpg')
+</code></pre>
+<p>Ecrire un programme pour récupérer la couleur du pixel en position (2, 2) de l'image <code>Exercice1.jpg</code></p>
+<hr />
+<h2 id="exercice-2">Exercice 2</h2>
+<p>Pour modifier l'image on va y appliquer différents filtres. Chaque filtre va modifier la couleur d'un pixel et on appliquera le filtre à tous les pixels de l'image.</p>
+<p>Le code suivant est une base pour appliquer un filtre qui retire la composante rouge de l'image :</p>
+<pre><code class="language-python">## Importation des modules
+
+from PIL import Image
+
+## Déclaration des constantes
+
+baseImage = Image.open('Exercice1.jpg')
+
+## Déclaration des fonctions
+
+def filtreSansRouge(pixel):
+    &quot;&quot;&quot;
+    Retourne un pixel avec la composante rouge à 0
+    @param pixel: le pixel à modifier
+    @return: la valeur du pixel modifié
+    &quot;&quot;&quot;
+    return (0, pixel[1], pixel[2])
+
+def sauvegarderImage(image, nomFichier):
+    &quot;&quot;&quot;Sauvegarde l'image dans un fichier&quot;&quot;&quot;
+    image.save(nomFichier)
+
+def appliquerFiltre(image, filtre):
+    &quot;&quot;&quot;Applique un filtre à une image&quot;&quot;&quot;
+    for x in range(image.width):
+        for y in range(image.height):
+            image.putpixel((x,y), filtre(image.getpixel((x,y))))
+
+## Fonction principale
+
+def main():
+    &quot;&quot;&quot;Fonction principale&quot;&quot;&quot;
+    appliquerFiltre(baseImage, filtreSansRouge)
+    baseImage.show()
+    sauvegarderImage(baseImage, 'Exercice1_rouge.jpg')
+
+## Programme principal
+
+if __name__ == '__main__':
+    main()
+</code></pre>
+<blockquote>
+<p>Ce programme est disponible dans le fichier <a href="../BaseFiltre.py">BaseFiltre.py</a></p>
+</blockquote>
+<p>Testez ce programme. Vous devez obtenir une image avec la composante rouge retirée.</p>
+<hr />
+<h2 id="exercice-3">Exercice 3</h2>
+<p>Créez un nouveau filtre qui retire la composante verte de l'image et appliquez-le à l'image <code>Exercice1.jpg</code>.</p>
+<hr />
+<h2 id="exercice-4">Exercice 4</h2>
+<p>Créez un nouveau filtre qui ne conserve que la composante rouge de l'image et appliquez-le à l'image <code>Exercice1.jpg</code>.</p>
+<hr />
+<h2 id="exercice-5">Exercice 5</h2>
+<p>Pour convertir une image en noir et blanc, il faut remplacer la valeur de chaque pixel par la moyenne des valeurs RVB du pixel.</p>
+<p>Par exemple, le pixel (255, 0, 0) devient (85, 85, 85) car (255 + 0 + 0) / 3 = 85</p>
+<p>Créez un nouveau filtre qui convertit l'image en noir et blanc et appliquez-le à l'image <code>Exercice1.jpg</code>.</p>
+<hr />
+<h3 id="exercice-6">Exercice 6</h3>
+<pre><code class="language-python"># Pour créer une nouvelle image :
+image2 = Image.new('RGB', (100, 100), (255, 255, 255))
+
+image2.save('Exercice3.jpg')
+</code></pre>
+<p>Ecrire un programme pour créer une image de 100x100 pixels que vous remplirez avec des pixels de couleur aléatoire.</p>
+<p>Vous pourrez ensuite utiliser vos filtres précédents pour modifier cette image.</p>
+<hr />
+<h2 id="ressources">Ressources</h2>
+<p>Exemple d'image possible pour les exercices : 
+<img alt="Image de base" src="../Exercice1.jpg" /></p>
+<p>Vous pouvez également utiliser une autre image de votre choix.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
