@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://antoinebaesen.github.io/nsi/Seconde/PhotographieNumerique/exercices/">
+        <link rel="canonical" href="https://antoinebaesen.github.io/nsi/Seconde/ImagerieNumeriqueMicrobit/ImagerieMicrobit/">
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Exercices : Photographie numérique - CoursNsi</title>
+        <title>Imagerie numérique et carte microbit - CoursNsi</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -68,29 +68,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#exercices-photographie-numerique" class="nav-link">Exercices : Photographie numérique</a>
+            <li class="nav-item" data-level="1"><a href="#imagerie-numerique-et-carte-microbit" class="nav-link">Imagerie numérique et carte microbit</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#exercice-1" class="nav-link">Exercice 1</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#exercice-2" class="nav-link">Exercice 2</a>
+            <li class="nav-item" data-level="2"><a href="#1-montage-de-base" class="nav-link">1. Montage de base</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#exercice-3" class="nav-link">Exercice 3</a>
+            <li class="nav-item" data-level="2"><a href="#2-montage-pour-afficher-de-la-couleur" class="nav-link">2. Montage pour afficher de la couleur</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#exercice-4" class="nav-link">Exercice 4</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#exercice-5" class="nav-link">Exercice 5</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#ressources" class="nav-link">Ressources</a>
+            <li class="nav-item" data-level="2"><a href="#3-a-vous-de-jouer" class="nav-link">3. A vous de jouer</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -101,108 +89,159 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="exercices-photographie-numerique">Exercices : Photographie numérique</h1>
-<h2 id="exercice-1">Exercice 1</h2>
-<blockquote>
-<p>Pour utiliser une image dans un programme python on peut utiliser la bibliothèque PIL (Python Imaging Library). Cette bibliothèque permet de lire et d'écrire des images dans de nombreux formats.</p>
-</blockquote>
-<p>Pour installer la bibliothèque PIL, il faut taper la commande suivante dans un terminal :</p>
-<pre><code class="language-bash">pip install pillow
+<h1 id="imagerie-numerique-et-carte-microbit">Imagerie numérique et carte microbit</h1>
+<h2 id="1-montage-de-base">1. Montage de base</h2>
+<p>On peut utiliser la carte microbit pour faire de l'imagerie numérique. On va essayer d'utiliser la carte microbit pour afficher de la couleur.</p>
+<p>Le premier montage de base va nous permettre de tester le fonctionnement de la carte microbit.
+Il nous faut :</p>
+<ul>
+<li>une carte microbit</li>
+<li>un câble USB pour relier la carte microbit à l'ordinateur</li>
+<li>un ordinateur où on va ouvrir l'éditeur en ligne de la carte microbit : https://python.microbit.org/v/3</li>
+<li>
+<p>une simple LED (diode électroluminescente) pour tester le montage</p>
+</li>
+<li>
+<p>Connecter la carte microbit à l'ordinateur avec le câble USB</p>
+</li>
+<li>connecter la LED sur la broche 0 de la carte microbit à l'aide d'un fil de connexion</li>
+<li>Ouvrir l'éditeur en ligne de la carte microbit : https://python.microbit.org/v/3</li>
+<li>Remplacer le programme par le programme suivant :</li>
+</ul>
+<pre><code class="language-python">from microbit import *
+
+while True:
+    pin0.write_digital(1)
+    sleep(1000)
+    pin0.write_digital(0)
+    sleep(1000)
 </code></pre>
-<p>Dans Thonny, il faut aller dans le menu <code>Outils</code> puis <code>Gérer les paquets</code> et taper <code>pillow</code> dans la zone de recherche.</p>
-<p>Voici un exemple d'utilisation de la bibliothèque PIL pour lire une image :</p>
-<pre><code class="language-python">from PIL import Image
+<ol>
+<li>Cliquer sur le bouton "Send to micro:bit" pour envoyer le programme sur la carte microbit</li>
+<li>Passez les étapes de téléchargement du programme sur la carte microbit</li>
+<li>Votre LED doit s'allumer et s'éteindre toutes les secondes</li>
+</ol>
+<h2 id="2-montage-pour-afficher-de-la-couleur">2. Montage pour afficher de la couleur</h2>
+<p>Pour afficher de la couleur on va utiliser une bande de LED.
+Il nous faut connecter la bande de LED sur la broche 0 de la carte microbit à la place de la LED.</p>
+<ol>
+<li>
+<p>Connecter la bande de LED sur la broche 0 de la carte microbit à la place de la LED</p>
+</li>
+<li>
+<p>On va utiliser le programme suivant pour allumer la bande de LED :</p>
+</li>
+</ol>
+<pre><code class="language-python">from microbit import *
+from neopixel import *
 
-# Charger l'image à partir du fichier
-image = Image.open('Exercice1.jpg')
+# Fonctions
+def allumer_leds(bande_led):
+    for i in range(30):
+        # on defini la couleur de la led actuelle
+        color = ...
+        bande_led[i] = color
+        bande_led.show()
+        sleep(100)
 
-# Afficher les dimensions de l'image
-print(image.size)
-
-# Afficher le premier pixel de l'image
-print(image.getpixel((0, 0)))
-
-# Modifier le premier pixel de l'image
-image.putpixel((0, 0), (255, 0, 0))
-
-# Sauvegarder l'image modifiée dans un nouveau fichier
-image.save('Exercice1_resultat.jpg')
+# Programme principal
+bande_led = NeoPixel(pin0, 30)
+allumer_leds(bande_led)
+sleep(2000)
+bande_led.clear()
 </code></pre>
-<p>Ecrire un programme pour récupérer la couleur du pixel en position (2, 2) de l'image <code>Exercice1.jpg</code></p>
-<hr />
-<h2 id="exercice-2">Exercice 2</h2>
-<p>Pour modifier l'image on va y appliquer différents filtres. Chaque filtre va modifier la couleur d'un pixel et on appliquera le filtre à tous les pixels de l'image.</p>
-<p>Le code suivant est une base pour appliquer un filtre qui retire la composante rouge de l'image :</p>
-<pre><code class="language-python">## Importation des modules
+<p>Que fait ce programme ?</p>
+<ol>
+<li>
+<p>Compléter le programme pour allumer la bande de LED en rouge</p>
+</li>
+<li>
+<p>Tester le programme</p>
+</li>
+<li>
+<p>Essayez de changer la couleur de la bande de LED</p>
+</li>
+</ol>
+<h2 id="3-a-vous-de-jouer">3. A vous de jouer</h2>
+<ol>
+<li>On veut faire une fonction pour allumer la bande quand on appuie sur le bouton A de la carte microbit. Compléter le programme suivant :</li>
+</ol>
+<pre><code class="language-python">from microbit import *
+from neopixel import *
 
-from PIL import Image
+# Fonctions
+def allumer_leds(bande_led):
+    for i in range(30):
+        # on defini la couleur de la led actuelle
+        color = ...
+        bande_led[i] = color
+        bande_led.show()
+        sleep(100)
 
-## Déclaration des constantes
+# Programme principal
+bande_led = NeoPixel(pin0, 30)
 
-baseImage = Image.open('Exercice1.jpg')
-
-## Déclaration des fonctions
-
-def filtreSansRouge(pixel):
-    &quot;&quot;&quot;
-    Retourne un pixel avec la composante rouge à 0
-    @param pixel: le pixel à modifier
-    @return: la valeur du pixel modifié
-    &quot;&quot;&quot;
-    return (0, pixel[1], pixel[2])
-
-def sauvegarderImage(image, nomFichier):
-    &quot;&quot;&quot;Sauvegarde l'image dans un fichier&quot;&quot;&quot;
-    image.save(nomFichier)
-
-def appliquerFiltre(image, filtre):
-    &quot;&quot;&quot;Applique un filtre à une image&quot;&quot;&quot;
-    for x in range(image.width):
-        for y in range(image.height):
-            image.putpixel((x,y), filtre(image.getpixel((x,y))))
-
-## Fonction principale
-
-def main():
-    &quot;&quot;&quot;Fonction principale&quot;&quot;&quot;
-    appliquerFiltre(baseImage, filtreSansRouge)
-    baseImage.show()
-    sauvegarderImage(baseImage, 'Exercice1_rouge.jpg')
-
-## Programme principal
-
-if __name__ == '__main__':
-    main()
+while True:
+    if ... :
+        allumer_leds(bande_led)
+    else:
+        bande_led.clear()
 </code></pre>
-<blockquote>
-<p>Ce programme est disponible dans le fichier <a href="../BaseFiltre.py">BaseFiltre.py</a></p>
-</blockquote>
-<p>Testez ce programme. Vous devez obtenir une image avec la composante rouge retirée.</p>
-<hr />
-<h2 id="exercice-3">Exercice 3</h2>
-<p>Créez un nouveau filtre qui retire la composante verte de l'image et appliquez-le à l'image <code>Exercice1.jpg</code>.</p>
-<hr />
-<h2 id="exercice-4">Exercice 4</h2>
-<p>Créez un nouveau filtre qui ne conserve que la composante rouge de l'image et appliquez-le à l'image <code>Exercice1.jpg</code>.</p>
-<hr />
-<h2 id="exercice-5">Exercice 5</h2>
-<p>Pour convertir une image en noir et blanc, il faut remplacer la valeur de chaque pixel par la moyenne des valeurs RVB du pixel.</p>
-<p>Par exemple, le pixel (255, 0, 0) devient (85, 85, 85) car (255 + 0 + 0) / 3 = 85</p>
-<p>Créez un nouveau filtre qui convertit l'image en noir et blanc et appliquez-le à l'image <code>Exercice1.jpg</code>.</p>
-<hr />
-<h3 id="exercice-6">Exercice 6</h3>
-<pre><code class="language-python"># Pour créer une nouvelle image :
-image2 = Image.new('RGB', (100, 100), (255, 255, 255))
+<ol>
+<li>On voudrait maintenant allumer la bande de LED en rouge quand on appuie sur le bouton A et en bleu quand on appuie sur le bouton B. Compléter le programme suivant :</li>
+</ol>
+<pre><code class="language-python">from microbit import *
+from neopixel import *
 
-image2.save('Exercice3.jpg')
+# Fonctions
+def allumer_leds(bande_led, couleur):
+    for i in range(30):
+        # on defini la couleur de la led actuelle
+        color = ...
+        bande_led[i] = color
+        bande_led.show()
+        sleep(100)
+
+# Programme principal
+bande_led = NeoPixel(pin0, 30)
+
+while True:
+    if ... :
+        allumer_leds(bande_led, ...)
+    elif ... :
+        allumer_leds(bande_led, ...)
+    else:
+        bande_led.clear()
 </code></pre>
-<p>Ecrire un programme pour créer une image de 100x100 pixels que vous remplirez avec des pixels de couleur aléatoire.</p>
-<p>Vous pourrez ensuite utiliser vos filtres précédents pour modifier cette image.</p>
-<hr />
-<h2 id="ressources">Ressources</h2>
-<p>Exemple d'image possible pour les exercices : 
-<img alt="Image de base" src="../Exercice1.jpg" /></p>
-<p>Vous pouvez également utiliser une autre image de votre choix.</p></div>
+<ol>
+<li>Enfin, on va essayer de faire une fonction pour allumer la bande de LED avec des couleurs aléatoires. Compléter le programme suivant :</li>
+</ol>
+<pre><code class="language-python">from microbit import *
+from neopixel import *
+from random import randint
+
+# Fonctions
+def allumer_leds(bande_led):
+    for i in range(30):
+        # on defini la couleur de la led actuelle
+        color = ...
+        bande_led[i] = color
+        bande_led.show()
+        sleep(100)
+
+# Programme principal
+bande_led = NeoPixel(pin0, 30)
+
+actif = False
+while True:
+    if button_a.is_pressed():
+        if not actif:
+            actif = True
+            allumer_leds(bande_led)
+    else:
+        bande_led.clear()
+        actif = False
+</code></pre></div>
             </div>
         </div>
 

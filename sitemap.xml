@@ -1,43 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://antoine_baesen.github.io/nsi/</loc>
-         <lastmod>2023-05-25</lastmod>
+         <loc>https://antoinebaesen.github.io/nsi/</loc>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://antoine_baesen.github.io/nsi/Premiere/</loc>
-         <lastmod>2023-05-25</lastmod>
+         <loc>https://antoinebaesen.github.io/nsi/Premiere/</loc>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://antoine_baesen.github.io/nsi/Premiere/LesTris/Cours/</loc>
-         <lastmod>2023-05-25</lastmod>
+         <loc>https://antoinebaesen.github.io/nsi/Premiere/LesTris/Cours/</loc>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://antoine_baesen.github.io/nsi/Seconde/</loc>
-         <lastmod>2023-05-25</lastmod>
+         <loc>https://antoinebaesen.github.io/nsi/Seconde/</loc>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://antoine_baesen.github.io/nsi/Seconde/PhotographieNumerique/CoursPhotographieNumerique/</loc>
-         <lastmod>2023-05-25</lastmod>
+         <loc>https://antoinebaesen.github.io/nsi/Seconde/ImagerieNumeriqueMicrobit/ImagerieMicrobit/</loc>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://antoine_baesen.github.io/nsi/Seconde/PhotographieNumerique/exercices/</loc>
-         <lastmod>2023-05-25</lastmod>
+         <loc>https://antoinebaesen.github.io/nsi/Seconde/PhotographieNumerique/CoursPhotographieNumerique/</loc>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://antoine_baesen.github.io/nsi/Terminale/</loc>
-         <lastmod>2023-05-25</lastmod>
+         <loc>https://antoinebaesen.github.io/nsi/Seconde/PhotographieNumerique/exercices/</loc>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://antoine_baesen.github.io/nsi/Terminale/RechercheTextuelle/Cours/</loc>
-         <lastmod>2023-05-25</lastmod>
+         <loc>https://antoinebaesen.github.io/nsi/Terminale/</loc>
+         <lastmod>2023-05-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://antoinebaesen.github.io/nsi/Terminale/RechercheTextuelle/Cours/</loc>
+         <lastmod>2023-05-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
