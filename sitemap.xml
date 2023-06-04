@@ -2,47 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://antoinebaesen.github.io/nsi/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://antoinebaesen.github.io/nsi/Premiere/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://antoinebaesen.github.io/nsi/Premiere/LesTris/Cours/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://antoinebaesen.github.io/nsi/Seconde/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://antoinebaesen.github.io/nsi/Seconde/ImagerieNumeriqueMicrobit/ImagerieMicrobit/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://antoinebaesen.github.io/nsi/Seconde/InternetEtReseaux/CoursInternetEtReseau/</loc>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://antoinebaesen.github.io/nsi/Seconde/PhotographieNumerique/CoursPhotographieNumerique/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://antoinebaesen.github.io/nsi/Seconde/PhotographieNumerique/exercices/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://antoinebaesen.github.io/nsi/Terminale/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://antoinebaesen.github.io/nsi/Terminale/RechercheTextuelle/Cours/</loc>
-         <lastmod>2023-05-31</lastmod>
+         <lastmod>2023-06-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
