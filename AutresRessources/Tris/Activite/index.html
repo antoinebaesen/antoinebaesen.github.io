@@ -20,7 +20,7 @@
     
     
       
-        <title>Activite - Cours SNT/NSI</title>
+        <title>Tri en temps linéaire - Cours SNT/NSI</title>
       
     
     
@@ -86,6 +86,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#tri-en-temps-lineaire" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -118,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Activite
+              Tri en temps linéaire
             
           </span>
         </div>
@@ -324,16 +329,170 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tri en temps linéaire
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Activite
+    Tri en temps linéaire
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cest-quoi-un-tri-en-temps-lineaire" class="md-nav__link">
+    C'est quoi un tri en temps linéaire ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#un-exemple-de-tri-en-temps-lineaire-le-tri-par-denombrement" class="md-nav__link">
+    Un exemple de tri en temps linéaire : le tri par dénombrement
+  </a>
+  
+    <nav class="md-nav" aria-label="Un exemple de tri en temps linéaire : le tri par dénombrement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principe" class="md-nav__link">
+    Principe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercices" class="md-nav__link">
+    Exercices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-utilisez-le-tri-par-denombrement-pour-trier-le-tableau-suivant" class="md-nav__link">
+    1. Utilisez le tri par dénombrement pour trier le tableau suivant :
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Utilisez le tri par dénombrement pour trier le tableau suivant :">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-implementer-une-fonction-pour-compter-le-nombre-doccurrences-de-chaque-element-dun-tableau" class="md-nav__link">
+    1. Implémenter une fonction pour compter le nombre d'occurrences de chaque élément d'un tableau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-implementer-une-fonction-pour-reconstruire-le-tableau-trie-a-partir-des-comptages" class="md-nav__link">
+    2. Implémenter une fonction pour reconstruire le tableau trié à partir des comptages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-en-utilisant-les-fonctions-precedentes-implementer-le-tri-par-denombrement" class="md-nav__link">
+    3. En utilisant les fonctions précédentes, implémenter le tri par dénombrement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-tester-votre-fonction" class="md-nav__link">
+    4. Tester votre fonction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pour-aller-plus-loin" class="md-nav__link">
+    Pour aller plus loin
+  </a>
+  
+    <nav class="md-nav" aria-label="Pour aller plus loin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-realiser-un-tri-par-base-a-la-main-pour-trier-le-tableau-suivant" class="md-nav__link">
+    1. Réaliser un tri par base à la main pour trier le tableau suivant :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-implementer-le-tri-par-base-en-python" class="md-nav__link">
+    2. Implémenter le tri par base en Python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -947,6 +1106,138 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cest-quoi-un-tri-en-temps-lineaire" class="md-nav__link">
+    C'est quoi un tri en temps linéaire ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#un-exemple-de-tri-en-temps-lineaire-le-tri-par-denombrement" class="md-nav__link">
+    Un exemple de tri en temps linéaire : le tri par dénombrement
+  </a>
+  
+    <nav class="md-nav" aria-label="Un exemple de tri en temps linéaire : le tri par dénombrement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principe" class="md-nav__link">
+    Principe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercices" class="md-nav__link">
+    Exercices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-utilisez-le-tri-par-denombrement-pour-trier-le-tableau-suivant" class="md-nav__link">
+    1. Utilisez le tri par dénombrement pour trier le tableau suivant :
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Utilisez le tri par dénombrement pour trier le tableau suivant :">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-implementer-une-fonction-pour-compter-le-nombre-doccurrences-de-chaque-element-dun-tableau" class="md-nav__link">
+    1. Implémenter une fonction pour compter le nombre d'occurrences de chaque élément d'un tableau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-implementer-une-fonction-pour-reconstruire-le-tableau-trie-a-partir-des-comptages" class="md-nav__link">
+    2. Implémenter une fonction pour reconstruire le tableau trié à partir des comptages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-en-utilisant-les-fonctions-precedentes-implementer-le-tri-par-denombrement" class="md-nav__link">
+    3. En utilisant les fonctions précédentes, implémenter le tri par dénombrement
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-tester-votre-fonction" class="md-nav__link">
+    4. Tester votre fonction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pour-aller-plus-loin" class="md-nav__link">
+    Pour aller plus loin
+  </a>
+  
+    <nav class="md-nav" aria-label="Pour aller plus loin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-realiser-un-tri-par-base-a-la-main-pour-trier-le-tableau-suivant" class="md-nav__link">
+    1. Réaliser un tri par base à la main pour trier le tableau suivant :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-implementer-le-tri-par-base-en-python" class="md-nav__link">
+    2. Implémenter le tri par base en Python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -962,9 +1253,493 @@
                   
 
 
-  <h1>Activite</h1>
+<h1 id="tri-en-temps-lineaire">Tri en temps linéaire</h1>
+<h2 id="introduction">Introduction</h2>
+<p>On connaît déjà les tris par comparaison qui utilisent des comparaisons entre les éléments du tableau à trier. Mais ces tris sont limités à une certaine complexité. On va voir ici des tris qui ne sont pas limités par cette complexité. Ils sont appelés tris en temps linéaires.</p>
+<h3 id="cest-quoi-un-tri-en-temps-lineaire">C'est quoi un tri en temps linéaire ?</h3>
+<p>Un tri en temps linéaire est un tri dont la complexité est en $O(n)$. C'est-à-dire que la complexité du tri est proportionnelle à la taille du tableau à trier. Ces tris ne fonctionnent pas sur n'importe quel type de données. Ils sont basés sur des hypothèses sur les données à trier, il faut donc bien choisir le tri en fonction des données à trier pour savoir si un de ces tris est adapté.</p>
+<h2 id="un-exemple-de-tri-en-temps-lineaire-le-tri-par-denombrement">Un exemple de tri en temps linéaire : le tri par dénombrement</h2>
+<h3 id="principe">Principe</h3>
+<p>Le tri par dénombrement est un tri en temps linéaire.
+On compte le nombre d'occurence dans le tableau de chaque valeurs possibles. (Il faut donc qu'on connaisse la valeur maximale du tableau)
+On met ces comptages dans un tableau à l'indice correspondant à la valeur, c'est à dire que le nombre d'occurence de la valeur 3 sera à l'indice 3 du tableau des comptages.
+Cela nous permet ensuite de reconstruire le tableau trié à partir des comptages en mettant autant de fois chaque valeur qu'elle apparait dans le tableau.</p>
+<p>C'est un tri efficace pour trier des données qui se répètent beaucoup si on connais la plage de valeurs possibles.
+On peut l'utiliser pour trier des entiers compris entre 0 et 100 par exemple.</p>
+<h3 id="exemple">Exemple</h3>
+<p>On veut trier le tableau suivant :</p>
+<table>
+<thead>
+<tr>
+<th>6</th>
+<th>0</th>
+<th>2</th>
+<th>0</th>
+<th>1</th>
+<th>3</th>
+<th>4</th>
+<th>6</th>
+<th>1</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>On compte le nombre d'occurrences de chaque élément :</p>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th align="center">0</th>
+<th align="center">1</th>
+<th align="center">2</th>
+<th align="center">3</th>
+<th align="center">4</th>
+<th align="center">5</th>
+<th align="center">6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nombre d'occurrences</td>
+<td align="center">2</td>
+<td align="center">3</td>
+<td align="center">2</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+<p>Cela correspond à ce tableau : <code>[2, 3, 2, 2, 1, 0, 2]</code></p>
+<p>On peut ensuite reconstruire le tableau trié en utilisant les comptages pour mettre les éléments dans le bon ordre autant de fois qu'ils apparaissent, on met 2 fois 0, 3 fois 1, 2 fois 2, etc... : <code>2*[0] + 3*[1] + 2*[2] + 2*[3] + 1*[4] + 0*[5] + 2*[6] = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4, 6, 6]</code></p>
+<table>
+<thead>
+<tr>
+<th>0</th>
+<th>0</th>
+<th>1</th>
+<th>1</th>
+<th>1</th>
+<th>2</th>
+<th>2</th>
+<th>3</th>
+<th>3</th>
+<th>4</th>
+<th>6</th>
+<th>6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="exercices">Exercices</h3>
+<h3 id="1-utilisez-le-tri-par-denombrement-pour-trier-le-tableau-suivant">1. Utilisez le tri par dénombrement pour trier le tableau suivant :</h3>
+<table>
+<thead>
+<tr>
+<th align="center">5</th>
+<th align="center">6</th>
+<th align="center">2</th>
+<th align="center">6</th>
+<th align="center">4</th>
+<th align="center">3</th>
+<th align="center">5</th>
+<th align="center">5</th>
+<th align="center">2</th>
+<th align="center">0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Nombres d'occurences : </p>
+<table>
+<thead>
+<tr>
+<th align="left">Indice</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Valeur</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+</tr>
+</tbody>
+</table>
+<p>Tableau trié :</p>
+<table>
+<thead>
+<tr>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+<th align="center">...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-implementer-une-fonction-pour-compter-le-nombre-doccurrences-de-chaque-element-dun-tableau">1. Implémenter une fonction pour compter le nombre d'occurrences de chaque élément d'un tableau</h4>
+<blockquote>
+<p>Les occurences de chaque valeurs seront stockés à l'indice correspondant à la valeur dans le tableau des comptages.
+Donc le nombre d'occurences de la valeur $4$ sera à l'indice <code>4</code> du tableau des comptages.</p>
+</blockquote>
+<pre><code class="language-python">def nombre_occur(tab : [int], k : int) -&gt; [int]:
+    &quot;&quot;&quot; Renvoie un tableau contenant le nombre d'occurrences de chaque élément du tableau tab.
+    tab est un tableau d'entiers compris entre 0 et k.
 
-<p>Activite sur les tris</p>
+    Préconditions :
+        k doit être connu.
+        tab doit être un tableau d'entiers compris entre 0 et k.
+
+    Paramètres :
+        tab (list) : le tableau à trier.
+        k (int) : la valeur maximale du tableau.
+
+    Retour :
+        comptages (list) : le tableau des comptages.
+    &quot;&quot;&quot;
+
+    ...
+</code></pre>
+<h4 id="2-implementer-une-fonction-pour-reconstruire-le-tableau-trie-a-partir-des-comptages">2. Implémenter une fonction pour reconstruire le tableau trié à partir des comptages</h4>
+<pre><code class="language-python">def reconstruire(tab : [int], k : int) -&gt; [int]:
+    &quot;&quot;&quot; Renvoie un tableau trié à partir des comptages.
+    ...
+    &quot;&quot;&quot;
+    ...
+</code></pre>
+<h4 id="3-en-utilisant-les-fonctions-precedentes-implementer-le-tri-par-denombrement">3. En utilisant les fonctions précédentes, implémenter le tri par dénombrement</h4>
+<blockquote>
+<p>Pensez à bien documenter votre fonction.</p>
+</blockquote>
+<pre><code class="language-python">def tri_par_denombrement(...
+</code></pre>
+<h4 id="4-tester-votre-fonction">4. Tester votre fonction</h4>
+<h2 id="pour-aller-plus-loin">Pour aller plus loin</h2>
+<p>Ils existent de nombreux autres tris en complexités linéaires. On peut citer par exemple le tri par base. Il est basé sur le principe de décomposer les entiers à trier en base $k$ et de trier la liste des entiers en fonction de la valeur de chaque chiffre en partant du chiffre des unités. </p>
+<blockquote>
+<p>Note : On montre la plupart de nos tests avec des tableaux d'entiers. Mais on peut aussi utiliser ces tris pour trier des tableaux de chaînes de caractères par exemple. Il suffit de définir une fonction de comparaison adaptée.</p>
+</blockquote>
+<p>Exemple :</p>
+<p>On veut trier le tableau suivant :</p>
+<table>
+<thead>
+<tr>
+<th align="center">BAC</th>
+<th align="center">RUE</th>
+<th align="center">ROC</th>
+<th align="center">MUR</th>
+<th align="center">SUD</th>
+<th align="center">COQ</th>
+<th align="center">DUC</th>
+<th align="center">RAT</th>
+<th align="center">SAC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>On trie les mots selon le dernier caractère :</p>
+<table>
+<thead>
+<tr>
+<th align="center">BAC</th>
+<th align="center">ROC</th>
+<th align="center">DUC</th>
+<th align="center">SAC</th>
+<th align="center">SUD</th>
+<th align="center">RUE</th>
+<th align="center">COQ</th>
+<th align="center">MUR</th>
+<th align="center">RAT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>On trie les mots selon l'avant-dernier caractère :</p>
+<table>
+<thead>
+<tr>
+<th align="center">BAC</th>
+<th align="center">SAC</th>
+<th align="center">RAT</th>
+<th align="center">ROC</th>
+<th align="center">COQ</th>
+<th align="center">DUC</th>
+<th align="center">SUD</th>
+<th align="center">RUE</th>
+<th align="center">MUR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>On trie les mots selon le premier caractère :</p>
+<table>
+<thead>
+<tr>
+<th align="center">BAC</th>
+<th align="center">COQ</th>
+<th align="center">DUC</th>
+<th align="center">MUR</th>
+<th align="center">RAT</th>
+<th align="center">ROC</th>
+<th align="center">RUE</th>
+<th align="center">SAC</th>
+<th align="center">SUD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="1-realiser-un-tri-par-base-a-la-main-pour-trier-le-tableau-suivant">1. Réaliser un tri par base à la main pour trier le tableau suivant :</h4>
+<blockquote>
+<p>Attention, avant la dernière étape les mots ne seront pas en ordre alphabétique. Ils doivent être triés selon un certain caractère qui correspond à l'étape en cours.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">ABC</th>
+<th align="center">CBA</th>
+<th align="center">BCA</th>
+<th align="center">BAC</th>
+<th align="center">CAB</th>
+<th align="center">ACB</th>
+<th align="center">ABA</th>
+<th align="center">CAA</th>
+<th align="center">BAA</th>
+<th align="center">AAC</th>
+<th align="center">CAC</th>
+<th align="center">ACA</th>
+<th align="center">CBB</th>
+<th align="center">BCB</th>
+<th align="center">ABB</th>
+<th align="center">BBB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-implementer-le-tri-par-base-en-python">2. Implémenter le tri par base en Python</h4>
+<pre><code class="language-python">def tri_par_base(tab : [str], tailleMot : int) -&gt; [str]:
+    &quot;&quot;&quot;Trie le tableau tab par base.
+        ...
+    &quot;&quot;&quot;
+
+    ...
+</code></pre>
 
 
 
