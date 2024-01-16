@@ -7304,7 +7304,9 @@
 <p>Voilà un schéma pour placer les mots :</p>
 <p><img alt="Schema" src="../src/schema1.png" /></p>
 <ol>
-<li>Placez les mots suivants dans le dictionnaire :</li>
+<li>
+<p>Placez les mots suivants dans le dictionnaire :</p>
+<ul>
 <li>maison</li>
 <li>lapin</li>
 <li>pomme</li>
@@ -7313,6 +7315,8 @@
 <li>abeille</li>
 <li>navire</li>
 <li>oiseau</li>
+</ul>
+</li>
 </ol>
 <p>Maintenant pour s'assurer qu'il soit utilisable, on verifier que les mots sont bien rangés par ordre alphabétique. En lisant les mots de gauche à droite, on doit avoir un ordre croissant. Sinon, c'est qu'il faut verifier une dernière règle : Tous les mots à gauche d'un mot doivent être plus petits que lui et tous les mots à droite d'un mot doivent être plus grands que lui.
 Si ce n'était pas déjà le cas, on peut réorganiser les mots pour que ce soit le cas.</p>
@@ -7323,13 +7327,11 @@ Si ce n'était pas déjà le cas, on peut réorganiser les mots pour que ce soit
 <li>
 <p>On peut maintenant chercher un mot dans le dictionnaire.
 Ecrivez un algorithme en pseudo-code qui permette de chercher un mot dans le dictionnaire.</p>
-</li>
-</ol>
 <blockquote>
 <p>Une fois que vous avez écrit l'algorithme, donnez votre algorithme à un camarade et demandez lui de chercher un mot dans le dictionnaire. Il choisi un mot et tente de le retrouver grâce à votre algorthme. A chaque étape, il détaille ce qu'il fait jusqu'à ce qu'il trouve le mot ou qu'il ne le trouve pas.</p>
 <p>Si il n'arrive pas à trouver le mot, vous pouvez réfléchir ensemble à comment corriger l'algorithme.</p>
 </blockquote>
-<ol>
+</li>
 <li>
 <p>Un mot peut-il être présent à plusieurs endroits dans le dictionnaire ?</p>
 </li>
@@ -7376,7 +7378,7 @@ for mot in mots:
     arbre.ajouter(mot)
 </code></pre>
 <ol>
-<li>On veut maintenant créer une fonction <code>chercher</code> qui permette de chercher un mot dans le dictionnaire. On pourra utiliser la fonction <code>chercher</code> suivante :</li>
+<li>On veut maintenant créer une fonction <code>chercher</code> qui permette de chercher un mot dans le dictionnaire.</li>
 </ol>
 <div class="py_mk_ide"  data-max="5"  data-exclude="eval,exec" ><div class="wrapper" ><span id="comment_editor_00000003" class="comment">###</span><div class="line" id="editor_00000003"></div><div id="term_editor_00000003"  class="term_editor" ></div></div><button class="tooltip" onclick='play("editor_00000003","")'>            <img src="../../../../pyodide-mkdocs/icons8-play-64.png">            <span class="tooltiptext">Lancer</span>            </button><span style="display: inline-block; width:1em"></span><button class="tooltip" onclick='download("editor_00000003","")'>            <img src="../../../../pyodide-mkdocs/icons8-download-64.png">            <span class="tooltiptext">Télécharger</span>            </button><span style="display: inline-block; width:0.3em"></span><button class="tooltip" onclick="document.getElementById('input_editor_00000003').click()" >            <img src="../../../../pyodide-mkdocs/icons8-upload-64.png">            <span class="tooltiptext">Téléverser</span>            </button>                <input type="file" id="input_editor_00000003" name="file" enctype="multipart/form-data" class="py_mk_hide"/><span style="display: inline-block; width:1em"></span><button class="tooltip" onclick='restart("editor_00000003")'>            <img src="../../../../pyodide-mkdocs/icons8-restart-64.png">            <span class="tooltiptext">Recharger</span>            </button><span style="display: inline-block; width:0.3em"></span><button class="tooltip" onclick='save("editor_00000003")'>            <img src="../../../../pyodide-mkdocs/icons8-save-64.png">            <span class="tooltiptext">Sauvegarder</span>            </button><span style="display: inline-block; width:1em"></span></div>
 <p><span id="content_editor_00000003" class="py_mk_hide"></span><span id="corr_content_editor_00000003" class="py_mk_hide" data-strudel=""></span></p>
