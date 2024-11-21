@@ -1,0 +1,41 @@
+/*
+  Binary Tree
+
+  Date: Thu Mar 21 13:20:41 2024
+
+*/
+
+digraph G {
+	bgcolor="#FFFFFF";
+
+	"N()" [label="Force > 6"];
+	"N(0)" [label="Intelligence < 4"];
+	"N(00)" [label="A"];
+	"N(000)" [color="#FFFFFF", label=""];
+	"N(00)" -> "N(000)" [color="#FFFFFF", label="", fontsize="8"];
+	"N(001)" [color="#FFFFFF", label=""];
+	"N(00)" -> "N(001)" [color="#FFFFFF", label="", fontsize="8"];
+	"N(0)" -> "N(00)" [color="#000000", label="0", fontsize="8"];
+	"N(01)" [label="B"];
+	"N(010)" [color="#FFFFFF", label=""];
+	"N(01)" -> "N(010)" [color="#FFFFFF", label="", fontsize="8"];
+	"N(011)" [color="#FFFFFF", label=""];
+	"N(01)" -> "N(011)" [color="#FFFFFF", label="", fontsize="8"];
+	"N(0)" -> "N(01)" [color="#000000", label="1", fontsize="8"];
+	"N()" -> "N(0)" [color="#000000", label="0", fontsize="8"];
+	"N(1)" [label="Malice == 3"];
+	"N(10)" [label="C"];
+	"N(100)" [color="#FFFFFF", label=""];
+	"N(10)" -> "N(100)" [color="#FFFFFF", label="", fontsize="8"];
+	"N(101)" [color="#FFFFFF", label=""];
+	"N(10)" -> "N(101)" [color="#FFFFFF", label="", fontsize="8"];
+	"N(1)" -> "N(10)" [color="#000000", label="0", fontsize="8"];
+	"N(11)" [label="D"];
+	"N(110)" [color="#FFFFFF", label=""];
+	"N(11)" -> "N(110)" [color="#FFFFFF", label="", fontsize="8"];
+	"N(111)" [color="#FFFFFF", label=""];
+	"N(11)" -> "N(111)" [color="#FFFFFF", label="", fontsize="8"];
+	"N(1)" -> "N(11)" [color="#000000", label="1", fontsize="8"];
+	"N()" -> "N(1)" [color="#000000", label="1", fontsize="8"];
+
+}

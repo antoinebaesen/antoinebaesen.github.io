@@ -1,0 +1,23 @@
+digraph {
+	"Compsognathus [2]" [label="Compsognathus [2]"]
+	"Carnosaure [1]" [label="Carnosaure [1]"]
+	"Velociraptor [2]" [label="Velociraptor [2]"]
+	"Tyrannosaure [1]" [label="Tyrannosaure [1]"]
+	"Poulet [-1]" [label="Poulet [-1]"]
+	"Tyrannosaure [1]" -> "Poulet [-1]"
+	"Velociraptor [2]" -> "Tyrannosaure [1]"
+	"Brachiosaure [2]" [label="Brachiosaure [2]"]
+	"Velociraptor [2]" -> "Brachiosaure [2]"
+	"Carnosaure [1]" -> "Velociraptor [2]"
+	"Allosaure [1]" [label="Allosaure [1]"]
+	"Carnosaure [1]" -> "Allosaure [1]"
+	"Compsognathus [2]" -> "Carnosaure [1]"
+	"Iguanodon [2]" [label="Iguanodon [2]"]
+	"Diplodocus [2]" [label="Diplodocus [2]"]
+	"Triceratops [2]" [label="Triceratops [2]"]
+	"Diplodocus [2]" -> "Triceratops [2]"
+	"Stegosaure [2]" [label="Stegosaure [2]"]
+	"Diplodocus [2]" -> "Stegosaure [2]"
+	"Iguanodon [2]" -> "Diplodocus [2]"
+	"Compsognathus [2]" -> "Iguanodon [2]"
+}

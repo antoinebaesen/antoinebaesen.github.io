@@ -9,14 +9,14 @@
       
       
       
-        <link rel="prev" href="../AutresRessources/UML/Exercices/">
+        <link rel="prev" href="../Manuel/documentation/docs/python/">
       
       
         <link rel="next" href="Algorithmique/Cours/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.3.2">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.30068a00.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
       
       
 
@@ -58,7 +58,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -77,9 +77,6 @@
   
     <body dir="ltr">
   
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -106,12 +103,12 @@
     <a href=".." title="Cours SNT/NSI" class="md-header__button md-logo" aria-label="Cours SNT/NSI" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -131,10 +128,13 @@
     </div>
     
     
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -143,21 +143,21 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -198,7 +198,7 @@
     <a href=".." title="Cours SNT/NSI" class="md-nav__button md-logo" aria-label="Cours SNT/NSI" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     Cours SNT/NSI
@@ -208,6 +208,7 @@
     
       
       
+  
   
   
   
@@ -230,6 +231,48 @@
   
   
   
+  
+    <li class="md-nav__item">
+      <a href="../definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Definition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../planOraux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plan oraux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
     
     
     
@@ -237,11 +280,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -252,8 +294,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             AutresRessources
           </label>
@@ -261,6 +303,7 @@
             
               
                 
+  
   
   
   
@@ -284,6 +327,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/AidePython/" class="md-nav__link">
         
@@ -304,6 +348,8 @@
   
   
   
+  
+    
     
     
     
@@ -311,11 +357,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
-        
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -326,8 +371,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             Complexité
           </label>
@@ -336,25 +381,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/Complexit%C3%A9/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -378,6 +404,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Complexit%C3%A9/Cours/" class="md-nav__link">
         
@@ -398,12 +425,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Complexit%C3%A9/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/Complexit%C3%A9/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -426,6 +475,8 @@
   
   
   
+  
+    
     
     
     
@@ -433,11 +484,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
-        
-          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -448,8 +498,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             ConceptionOrienteeObjet
           </label>
@@ -458,25 +508,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/ConceptionOrienteeObjet/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -500,6 +531,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ConceptionOrienteeObjet/Cours/" class="md-nav__link">
         
@@ -520,12 +552,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ConceptionOrienteeObjet/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/ConceptionOrienteeObjet/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -548,6 +602,8 @@
   
   
   
+  
+    
     
     
     
@@ -555,11 +611,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
-        
-          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -570,8 +625,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             Cryptographie
           </label>
@@ -580,25 +635,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/Cryptographie/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -622,6 +658,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Cryptographie/Cours/" class="md-nav__link">
         
@@ -642,12 +679,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Cryptographie/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/Cryptographie/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -670,6 +729,8 @@
   
   
   
+  
+    
     
     
     
@@ -677,11 +738,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
-        
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -692,8 +752,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
             Git
           </label>
@@ -702,25 +762,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/Git/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -744,6 +785,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Git/Cours/" class="md-nav__link">
         
@@ -764,12 +806,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Git/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/Git/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -792,6 +856,8 @@
   
   
   
+  
+    
     
     
     
@@ -799,11 +865,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
-        
-          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -814,8 +879,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
             <span class="md-nav__icon md-icon"></span>
             Histoire
           </label>
@@ -824,25 +889,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/Histoire/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -866,12 +912,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Histoire/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Histoire de l'informatique
   </span>
   
 
@@ -886,12 +933,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Histoire/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/Histoire/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -914,6 +983,8 @@
   
   
   
+  
+    
     
     
     
@@ -921,11 +992,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
-        
-          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -936,8 +1006,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
             <span class="md-nav__icon md-icon"></span>
             ProgrammationConcurente
           </label>
@@ -946,25 +1016,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/ProgrammationConcurente/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -988,6 +1039,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ProgrammationConcurente/Cours/" class="md-nav__link">
         
@@ -1008,12 +1060,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ProgrammationConcurente/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/ProgrammationConcurente/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -1036,6 +1110,8 @@
   
   
   
+  
+    
     
     
     
@@ -1043,11 +1119,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_9" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
-        
-          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_9" id="__nav_4_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1058,8 +1133,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_9">
             <span class="md-nav__icon md-icon"></span>
             ProgrammationFonctionelle
           </label>
@@ -1068,25 +1143,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/ProgrammationFonctionelle/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1110,6 +1166,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ProgrammationFonctionelle/Cours/" class="md-nav__link">
         
@@ -1130,12 +1187,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ProgrammationFonctionelle/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/ProgrammationFonctionelle/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -1158,6 +1237,8 @@
   
   
   
+  
+    
     
     
     
@@ -1165,11 +1246,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_10" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
-        
-          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_10" id="__nav_4_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1180,8 +1260,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_10">
             <span class="md-nav__icon md-icon"></span>
             ProgrammationLogique
           </label>
@@ -1190,25 +1270,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/ProgrammationLogique/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1232,6 +1293,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ProgrammationLogique/Cours/" class="md-nav__link">
         
@@ -1252,12 +1314,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ProgrammationLogique/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/ProgrammationLogique/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -1280,6 +1364,8 @@
   
   
   
+  
+    
     
     
     
@@ -1287,11 +1373,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_11" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
-        
-          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_11" id="__nav_4_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1302,8 +1387,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_11">
             <span class="md-nav__icon md-icon"></span>
             ProgrammationParallele
           </label>
@@ -1312,25 +1397,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/ProgrammationParallele/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1354,6 +1420,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ProgrammationParallele/Cours/" class="md-nav__link">
         
@@ -1374,12 +1441,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/ProgrammationParallele/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/ProgrammationParallele/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -1402,6 +1491,8 @@
   
   
   
+  
+    
     
     
     
@@ -1409,11 +1500,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_12" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
-        
-          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_12" id="__nav_4_12_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1424,8 +1514,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_12">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_12">
             <span class="md-nav__icon md-icon"></span>
             Pygames
           </label>
@@ -1434,25 +1524,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/Pygames/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1476,6 +1547,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Pygames/Cours/" class="md-nav__link">
         
@@ -1496,12 +1568,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Pygames/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/Pygames/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -1524,6 +1618,8 @@
   
   
   
+  
+    
     
     
     
@@ -1531,11 +1627,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_13" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
-        
-          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_13" id="__nav_4_13_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1546,8 +1641,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_13">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_13">
             <span class="md-nav__icon md-icon"></span>
             TDD
           </label>
@@ -1556,25 +1651,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/TDD/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1598,6 +1674,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/TDD/Cours/" class="md-nav__link">
         
@@ -1618,12 +1695,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/TDD/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/TDD/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -1646,6 +1745,8 @@
   
   
   
+  
+    
     
     
     
@@ -1653,11 +1754,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_14" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_14" >
-        
-          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1668,8 +1768,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_14">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_14">
             <span class="md-nav__icon md-icon"></span>
             TestsUnitaires
           </label>
@@ -1678,25 +1778,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/TestsUnitaires/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1720,6 +1801,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/TestsUnitaires/Cours/" class="md-nav__link">
         
@@ -1740,12 +1822,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/TestsUnitaires/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/TestsUnitaires/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -1768,6 +1872,8 @@
   
   
   
+  
+    
     
     
     
@@ -1775,11 +1881,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_15" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_15" >
-        
-          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1790,8 +1895,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_15">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_15">
             <span class="md-nav__icon md-icon"></span>
             TheorieDesLanguages
           </label>
@@ -1800,25 +1905,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/TheorieDesLanguages/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1842,6 +1928,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/TheorieDesLanguages/Cours/" class="md-nav__link">
         
@@ -1862,12 +1949,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/TheorieDesLanguages/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/TheorieDesLanguages/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -1890,6 +1999,8 @@
   
   
   
+  
+    
     
     
     
@@ -1897,11 +2008,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_16" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_16" >
-        
-          <label class="md-nav__link" for="__nav_2_16" id="__nav_2_16_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_16" id="__nav_4_16_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1912,8 +2022,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_16">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_16">
             <span class="md-nav__icon md-icon"></span>
             TrisNonLineaires
           </label>
@@ -1924,8 +2034,9 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../AutresRessources/TrisNonLineaires/Activite/" class="md-nav__link">
+      <a href="../AutresRessources/TrisNonLineaires/Manuel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1952,6 +2063,8 @@
   
   
   
+  
+    
     
     
     
@@ -1959,11 +2072,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_17" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_17" >
-        
-          <label class="md-nav__link" for="__nav_2_17" id="__nav_2_17_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_17" id="__nav_4_17_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1974,8 +2086,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_17_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_17">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_17">
             <span class="md-nav__icon md-icon"></span>
             Turtle
           </label>
@@ -1984,25 +2096,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/Turtle/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -2026,6 +2119,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Turtle/Cours/" class="md-nav__link">
         
@@ -2046,12 +2140,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/Turtle/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/Turtle/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -2074,6 +2190,8 @@
   
   
   
+  
+    
     
     
     
@@ -2081,11 +2199,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_18" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_18" >
-        
-          <label class="md-nav__link" for="__nav_2_18" id="__nav_2_18_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_4_18" id="__nav_4_18_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2096,8 +2213,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_18_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_18">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_18">
             <span class="md-nav__icon md-icon"></span>
             UML
           </label>
@@ -2106,25 +2223,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../AutresRessources/UML/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -2148,6 +2246,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/UML/Cours/" class="md-nav__link">
         
@@ -2168,12 +2267,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../AutresRessources/UML/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AutresRessources/UML/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -2202,9 +2323,349 @@
       
   
   
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Manuel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Liens
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/Concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quelques concepts d'informatique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/JS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/Java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JAVA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/Markdown/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/UML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Info
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_9" id="__nav_5_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_9">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_9_1" id="__nav_5_9_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Docs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/documentation/docs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aesen's Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Manuel/documentation/docs/python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
+  
+    
     
     
     
@@ -2212,11 +2673,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2227,8 +2687,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Premiere
           </label>
@@ -2239,6 +2699,7 @@
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -2286,16 +2747,170 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#les-algorithmes-de-tri" class="md-nav__link">
-    Les algorithmes de tri
+  <a href="#cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cours
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cours">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-rentree" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Rentrée
+    </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#interactions-homme-machine-sur-le-web" class="md-nav__link">
-    Intéractions Homme-Machine sur le Web
+        
+          <li class="md-nav__item">
+  <a href="#2-types-et-valeurs-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Types et valeurs de base
+    </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-langages-et-programmation-les-constructions-elementaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Langages et programmation - Les constructions élémentaires
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-principes-darchitecture-des-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Principes d'architecture des machines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-projet-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Projet 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-langage-les-types-construits" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Langage - Les types construits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-interactions-homme-machine-sur-le-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Interactions Homme-Machine sur le Web
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-projet-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Projet 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-algorithme-des-k-plus-proches-voisins" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Algorithme des k-plus proches voisins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-dictonnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Dictonnaires
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-reseaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Réseaux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-les-tris" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Les Tris
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-traitement-de-donnees-en-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Traitement de données en tables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-projet-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Projet 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-algorithmes-gloutons" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Algorithmes gloutons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-recherche-dichotomique" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Recherche dichotomique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-projet-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Projet 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2313,6 +2928,8 @@
   
   
   
+  
+    
     
     
     
@@ -2320,11 +2937,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
-        
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2335,8 +2951,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             Algorithmique
           </label>
@@ -2344,6 +2960,7 @@
             
               
                 
+  
   
   
   
@@ -2367,6 +2984,8 @@
   
   
   
+  
+    
     
     
     
@@ -2374,11 +2993,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
-        
-          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_2_2" id="__nav_6_2_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2389,8 +3007,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_2">
             <span class="md-nav__icon md-icon"></span>
             Gloutons
           </label>
@@ -2399,25 +3017,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="Algorithmique/Gloutons/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -2441,6 +3040,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Algorithmique/Gloutons/Cours/" class="md-nav__link">
         
@@ -2461,12 +3061,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Algorithmique/Gloutons/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/Gloutons/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -2489,6 +3111,8 @@
   
   
   
+  
+    
     
     
     
@@ -2496,11 +3120,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
-        
-          <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_2_3" id="__nav_6_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2511,8 +3134,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_3">
             <span class="md-nav__icon md-icon"></span>
             PlusProchesVoisins
           </label>
@@ -2521,25 +3144,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="Algorithmique/PlusProchesVoisins/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -2563,12 +3167,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Algorithmique/PlusProchesVoisins/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Algorithme du plus proche voisin
   </span>
   
 
@@ -2583,12 +3188,90 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Algorithmique/PlusProchesVoisins/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/PlusProchesVoisins/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithmes de classification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_3_5" id="__nav_6_2_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    arbreDecisionnel
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            arbreDecisionnel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/PlusProchesVoisins/arbreDecisionnel/arbreDecisionnel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arbre de décision
   </span>
   
 
@@ -2611,6 +3294,8 @@
   
   
   
+  
+    
     
     
     
@@ -2618,11 +3303,210 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_3_6" id="__nav_6_2_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bayes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Bayes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/PlusProchesVoisins/bayes/bayes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithme de classification naive bayesienne
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3_7" >
         
-          <label class="md-nav__link" for="__nav_3_2_4" id="__nav_3_2_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_2_3_7" id="__nav_6_2_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Knn
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Knn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/PlusProchesVoisins/knn/Classification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_3_8" id="__nav_6_2_3_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reseau
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_2_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Reseau
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/PlusProchesVoisins/reseau/reseauNeuronne/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Réseau de neuronnes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_4" id="__nav_6_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2633,8 +3517,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_4">
             <span class="md-nav__icon md-icon"></span>
             RechercheDichotomique
           </label>
@@ -2643,25 +3527,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="Algorithmique/RechercheDichotomique/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -2685,6 +3550,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Algorithmique/RechercheDichotomique/Cours/" class="md-nav__link">
         
@@ -2705,8 +3571,115 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Algorithmique/RechercheDichotomique/Exercices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/RechercheDichotomique/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_5" id="__nav_6_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tris
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tris
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/Tris/Cours/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Les algorithmes de tri
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Algorithmique/Tris/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2728,68 +3701,6 @@
 
               
             
-              
-                
-  
-  
-  
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_5" >
-        
-          <label class="md-nav__link" for="__nav_3_2_5" id="__nav_3_2_5_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Tris
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2_5">
-            <span class="md-nav__icon md-icon"></span>
-            Tris
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Algorithmique/Tris/Cours/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Les algorithmes de tri
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2803,128 +3714,8 @@
   
   
   
+  
     
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
-        
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    ArbresBinaireRecherche
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
-            <span class="md-nav__icon md-icon"></span>
-            ArbresBinaireRecherche
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ArbresBinaireRecherche/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Index
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ArbresBinaireRecherche/activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activité sur les arbres binaires de recherche
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ArbresBinaireRecherche/correction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activité sur les arbres binaires de recherche
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ArbresBinaireRecherche/synthese/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Arbres et arbres de recherche
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
     
     
     
@@ -2932,11 +3723,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
-        
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -2947,8 +3737,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
             <span class="md-nav__icon md-icon"></span>
             Architecture
           </label>
@@ -2956,6 +3746,7 @@
             
               
                 
+  
   
   
   
@@ -2979,6 +3770,8 @@
   
   
   
+  
+    
     
     
     
@@ -2986,11 +3779,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_2" >
-        
-          <label class="md-nav__link" for="__nav_3_4_2" id="__nav_3_4_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_3_2" id="__nav_6_3_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3001,8 +3793,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_2">
             <span class="md-nav__icon md-icon"></span>
             Os
           </label>
@@ -3011,25 +3803,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="Architecture/Os/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -3053,6 +3826,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Architecture/Os/Cours/" class="md-nav__link">
         
@@ -3073,12 +3847,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Architecture/Os/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Architecture/Os/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -3101,6 +3897,8 @@
   
   
   
+  
+    
     
     
     
@@ -3108,11 +3906,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4_3" >
-        
-          <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_3_3" id="__nav_6_3_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3123,8 +3920,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3_3">
             <span class="md-nav__icon md-icon"></span>
             Reseaux
           </label>
@@ -3133,25 +3930,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="Architecture/Reseaux/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -3175,6 +3953,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Architecture/Reseaux/Cours/" class="md-nav__link">
         
@@ -3195,8 +3974,250 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Architecture/Reseaux/Exercices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Architecture/Reseaux/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dictionnaires
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Dictionnaires
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Dictionnaires/Cours/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cours
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Dictionnaires/Exercices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Dictionnaires/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    IhmWeb
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            IhmWeb
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="IhmWeb/Activite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Activite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="IhmWeb/Cours/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interaction homme machine sur le web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="IhmWeb/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3218,19 +4239,13 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
               
                 
   
   
   
+  
+    
     
     
     
@@ -3238,73 +4253,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
-        
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    IhmWeb
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
-            <span class="md-nav__icon md-icon"></span>
-            IhmWeb
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="IhmWeb/Cours/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Interaction homme machine sur le web
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
-        
-          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3315,8 +4267,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
             <span class="md-nav__icon md-icon"></span>
             Langage
           </label>
@@ -3325,25 +4277,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="Langage/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -3367,12 +4300,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Langage/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Langages et programmation - Les constructions élémentaires
   </span>
   
 
@@ -3387,12 +4321,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="Langage/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Langage/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -3415,6 +4371,8 @@
   
   
   
+  
+    
     
     
     
@@ -3422,11 +4380,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_7" >
-        
-          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3437,8 +4394,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
             <span class="md-nav__icon md-icon"></span>
             RechercheDichotomique
           </label>
@@ -3447,25 +4404,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="RechercheDichotomique/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -3489,6 +4427,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="RechercheDichotomique/Cours/" class="md-nav__link">
         
@@ -3509,12 +4448,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="RechercheDichotomique/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RechercheDichotomique/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -3537,6 +4498,8 @@
   
   
   
+  
+    
     
     
     
@@ -3544,11 +4507,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_8" >
-        
-          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_8" id="__nav_6_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3559,8 +4521,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8">
             <span class="md-nav__icon md-icon"></span>
             RepresentationDonnes
           </label>
@@ -3571,12 +4533,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="RepresentationDonnes/Activite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Activite
+    Activité sur les types et valeurs de base
   </span>
   
 
@@ -3588,6 +4551,7 @@
             
               
                 
+  
   
   
   
@@ -3611,12 +4575,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="RepresentationDonnes/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Codage et représentation des données
   </span>
   
 
@@ -3631,12 +4596,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="RepresentationDonnes/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercices
+    Types de base en informatique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RepresentationDonnes/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -3659,6 +4646,8 @@
   
   
   
+  
+    
     
     
     
@@ -3666,11 +4655,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_9" >
-        
-          <label class="md-nav__link" for="__nav_3_9" id="__nav_3_9_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_9" id="__nav_6_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3681,8 +4669,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_9">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_9">
             <span class="md-nav__icon md-icon"></span>
             TraitementDonnesTables
           </label>
@@ -3691,25 +4679,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="TraitementDonnesTables/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -3733,6 +4702,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="TraitementDonnesTables/Cours/" class="md-nav__link">
         
@@ -3753,12 +4723,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="TraitementDonnesTables/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TraitementDonnesTables/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -3781,6 +4773,8 @@
   
   
   
+  
+    
     
     
     
@@ -3788,11 +4782,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_10" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_10" >
-        
-          <label class="md-nav__link" for="__nav_3_10" id="__nav_3_10_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_6_10" id="__nav_6_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3803,8 +4796,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_10">
             <span class="md-nav__icon md-icon"></span>
             TypesConstruits
           </label>
@@ -3813,25 +4806,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="TypesConstruits/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -3855,12 +4829,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="TypesConstruits/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Types construits en Python
   </span>
   
 
@@ -3872,6 +4847,7 @@
             
               
                 
+  
   
   
   
@@ -3890,6 +4866,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TypesConstruits/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3910,6 +4907,8 @@
   
   
   
+  
+    
     
     
     
@@ -3917,11 +4916,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3932,8 +4930,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Seconde
           </label>
@@ -3941,6 +4939,7 @@
             
               
                 
+  
   
   
   
@@ -3964,6 +4963,8 @@
   
   
   
+  
+    
     
     
     
@@ -3971,11 +4972,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
-        
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -3986,8 +4986,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
             <span class="md-nav__icon md-icon"></span>
             DonneesStructurees
           </label>
@@ -3996,25 +4996,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Seconde/DonneesStructurees/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -4038,12 +5019,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/DonneesStructurees/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Données structurées
   </span>
   
 
@@ -4058,12 +5040,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/DonneesStructurees/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/DonneesStructurees/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -4086,6 +5090,8 @@
   
   
   
+  
+    
     
     
     
@@ -4093,11 +5099,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
-        
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4108,8 +5113,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
             Internet
           </label>
@@ -4120,12 +5125,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/Internet/Activite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Activite
+    Activite de découverte : Internet
   </span>
   
 
@@ -4137,6 +5143,7 @@
             
               
                 
+  
   
   
   
@@ -4160,28 +5167,9 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/Internet/Cours/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cours
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Seconde/Internet/CoursInternetEtReseau/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4200,12 +5188,55 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/Internet/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercices
+    Exercice Mise en pratique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/Internet/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/Internet/TestX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cours
   </span>
   
 
@@ -4228,6 +5259,8 @@
   
   
   
+  
+    
     
     
     
@@ -4235,25 +5268,24 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
-        
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Localisation
+    LangagePython
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
             <span class="md-nav__icon md-icon"></span>
-            Localisation
+            LangagePython
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -4262,12 +5294,13 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../Seconde/Localisation/Activite/" class="md-nav__link">
+      <a href="../Seconde/LangagePython/Corrections/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Activite
+    Corrections
   </span>
   
 
@@ -4279,6 +5312,113 @@
             
               
                 
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/LangagePython/Cours/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Base de langage Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/LangagePython/Exercices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/LangagePython/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Localisation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Localisation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
   
   
   
@@ -4302,12 +5442,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/Localisation/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Localisation, cartographie et mobilité
   </span>
   
 
@@ -4322,12 +5463,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/Localisation/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercices
+    Localisation - activité
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/Localisation/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -4350,6 +5513,8 @@
   
   
   
+  
+    
     
     
     
@@ -4357,11 +5522,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
-        
-          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4372,8 +5536,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
             <span class="md-nav__icon md-icon"></span>
             ObjetsConnectes
           </label>
@@ -4382,25 +5546,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Seconde/ObjetsConnectes/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -4424,12 +5569,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/ObjetsConnectes/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Informatique embarquée et objets connectés
   </span>
   
 
@@ -4444,12 +5590,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/ObjetsConnectes/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/ObjetsConnectes/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -4472,6 +5640,8 @@
   
   
   
+  
+    
     
     
     
@@ -4479,11 +5649,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
-        
-          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4494,8 +5663,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7">
             <span class="md-nav__icon md-icon"></span>
             PhotographieNumerique
           </label>
@@ -4503,6 +5672,7 @@
             
               
                 
+  
   
   
   
@@ -4526,6 +5696,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/PhotographieNumerique/exercices/" class="md-nav__link">
         
@@ -4546,6 +5717,8 @@
   
   
   
+  
+    
     
     
     
@@ -4553,11 +5726,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6_3" >
-        
-          <label class="md-nav__link" for="__nav_4_6_3" id="__nav_4_6_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7_7_3" id="__nav_7_7_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4568,8 +5740,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_6_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_6_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_3">
             <span class="md-nav__icon md-icon"></span>
             ImagerieNumeriqueMicrobit
           </label>
@@ -4577,6 +5749,7 @@
             
               
                 
+  
   
   
   
@@ -4616,6 +5789,8 @@
   
   
   
+  
+    
     
     
     
@@ -4623,11 +5798,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_8" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
-        
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7_8" id="__nav_7_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4638,8 +5812,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_8">
             <span class="md-nav__icon md-icon"></span>
             ReseauxSociaux
           </label>
@@ -4648,25 +5822,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Seconde/ReseauxSociaux/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -4690,12 +5845,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/ReseauxSociaux/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Réseaux sociaux activité
   </span>
   
 
@@ -4710,12 +5866,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/ReseauxSociaux/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/ReseauxSociaux/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -4738,6 +5916,8 @@
   
   
   
+  
+    
     
     
     
@@ -4745,11 +5925,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_9" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
-        
-          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_7_9" id="__nav_7_9_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4760,8 +5939,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_9">
             <span class="md-nav__icon md-icon"></span>
             Web
           </label>
@@ -4770,25 +5949,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Seconde/Web/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -4812,12 +5972,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/Web/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Principe de fonctionnement du web
   </span>
   
 
@@ -4832,12 +5993,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Seconde/Web/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercices
+    Principe du web : activité
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Seconde/Web/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -4867,6 +6050,8 @@
   
   
   
+  
+    
     
     
     
@@ -4874,11 +6059,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4889,8 +6073,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Terminale
           </label>
@@ -4898,6 +6082,7 @@
             
               
                 
+  
   
   
   
@@ -4921,6 +6106,8 @@
   
   
   
+  
+    
     
     
     
@@ -4928,11 +6115,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
-        
-          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4943,8 +6129,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
             <span class="md-nav__icon md-icon"></span>
             Architecture
           </label>
@@ -4952,6 +6138,7 @@
             
               
                 
+  
   
   
   
@@ -4975,6 +6162,8 @@
   
   
   
+  
+    
     
     
     
@@ -4982,11 +6171,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_2" >
-        
-          <label class="md-nav__link" for="__nav_5_2_2" id="__nav_5_2_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_2_2" id="__nav_8_2_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -4997,8 +6185,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_2_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2">
             <span class="md-nav__icon md-icon"></span>
             ArchitectureMachine
           </label>
@@ -5007,25 +6195,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Architecture/ArchitectureMachine/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -5049,6 +6218,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Architecture/ArchitectureMachine/Cours/" class="md-nav__link">
         
@@ -5069,12 +6239,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Architecture/ArchitectureMachine/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Architecture/ArchitectureMachine/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architecture Machine
   </span>
   
 
@@ -5097,6 +6289,8 @@
   
   
   
+  
+    
     
     
     
@@ -5104,11 +6298,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_3" >
-        
-          <label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_2_3" id="__nav_8_2_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5119,8 +6312,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_2_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_3">
             <span class="md-nav__icon md-icon"></span>
             ProcessusEtOs
           </label>
@@ -5129,25 +6322,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Architecture/ProcessusEtOs/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -5171,6 +6345,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Architecture/ProcessusEtOs/Cours/" class="md-nav__link">
         
@@ -5191,12 +6366,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Architecture/ProcessusEtOs/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Architecture/ProcessusEtOs/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -5219,6 +6416,8 @@
   
   
   
+  
+    
     
     
     
@@ -5226,11 +6425,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_4" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_4" >
-        
-          <label class="md-nav__link" for="__nav_5_2_4" id="__nav_5_2_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_2_4" id="__nav_8_2_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5241,8 +6439,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_2_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_4">
             <span class="md-nav__icon md-icon"></span>
             Routage
           </label>
@@ -5251,25 +6449,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Architecture/Routage/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -5293,6 +6472,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Architecture/Routage/Cours/" class="md-nav__link">
         
@@ -5313,12 +6493,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Architecture/Routage/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Architecture/Routage/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -5341,6 +6543,8 @@
   
   
   
+  
+    
     
     
     
@@ -5348,11 +6552,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_5" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_5" >
-        
-          <label class="md-nav__link" for="__nav_5_2_5" id="__nav_5_2_5_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_2_5" id="__nav_8_2_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5363,8 +6566,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_2_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_5">
             <span class="md-nav__icon md-icon"></span>
             SecurisationDesCommunications
           </label>
@@ -5373,25 +6576,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Architecture/SecurisationDesCommunications/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -5415,6 +6599,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Architecture/SecurisationDesCommunications/Cours/" class="md-nav__link">
         
@@ -5435,6 +6620,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Architecture/SecurisationDesCommunications/Exercices/" class="md-nav__link">
         
@@ -5450,6 +6636,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Architecture/SecurisationDesCommunications/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5471,6 +6678,8 @@
   
   
   
+  
+    
     
     
     
@@ -5478,11 +6687,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
-        
-          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5493,8 +6701,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
             <span class="md-nav__icon md-icon"></span>
             BaseDonnees
           </label>
@@ -5505,26 +6713,8 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../Terminale/BaseDonnees/Cours/" class="md-nav__link">
-        
   
-  <span class="md-ellipsis">
-    Cours
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
+    
     
     
     
@@ -5532,11 +6722,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_1" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_2" >
-        
-          <label class="md-nav__link" for="__nav_5_3_2" id="__nav_5_3_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_3_1" id="__nav_8_3_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5547,8 +6736,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3_1">
             <span class="md-nav__icon md-icon"></span>
             Conception
           </label>
@@ -5559,52 +6748,13 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../Terminale/BaseDonnees/Conception/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/BaseDonnees/Conception/Corrections/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Corrections
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
   
     <li class="md-nav__item">
       <a href="../Terminale/BaseDonnees/Conception/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    Bases de données
   </span>
   
 
@@ -5619,12 +6769,13 @@
   
   
   
+  
     <li class="md-nav__item">
-      <a href="../Terminale/BaseDonnees/Conception/Exercices/" class="md-nav__link">
+      <a href="../Terminale/BaseDonnees/Conception/Manuel/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Exercices
+    Manuel
   </span>
   
 
@@ -5647,6 +6798,8 @@
   
   
   
+  
+    
     
     
     
@@ -5654,11 +6807,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_3" >
-        
-          <label class="md-nav__link" for="__nav_5_3_3" id="__nav_5_3_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5669,8 +6821,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_3_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3_2">
             <span class="md-nav__icon md-icon"></span>
             SQL
           </label>
@@ -5679,25 +6831,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/BaseDonnees/SQL/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -5721,12 +6854,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/BaseDonnees/SQL/Cours/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Cours
+    langage SQL
   </span>
   
 
@@ -5738,6 +6872,7 @@
             
               
                 
+  
   
   
   
@@ -5746,7 +6881,28 @@
         
   
   <span class="md-ellipsis">
-    Exercices
+    BDD (exercices) – Les requêtes SQL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/BaseDonnees/SQL/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Language SQL et manipulation de bases de données
   </span>
   
 
@@ -5777,6 +6933,8 @@
   
   
   
+  
+    
     
     
     
@@ -5784,11 +6942,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
-        
-          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5799,8 +6956,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
             <span class="md-nav__icon md-icon"></span>
             Language
           </label>
@@ -5808,6 +6965,7 @@
             
               
                 
+  
   
   
   
@@ -5831,6 +6989,8 @@
   
   
   
+  
+    
     
     
     
@@ -5838,11 +6998,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_2" >
-        
-          <label class="md-nav__link" for="__nav_5_4_2" id="__nav_5_4_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4_2" id="__nav_8_4_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5853,8 +7012,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_2">
             <span class="md-nav__icon md-icon"></span>
             DiviserPourRegner
           </label>
@@ -5863,25 +7022,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Language/DiviserPourRegner/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -5905,6 +7045,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/DiviserPourRegner/Cours/" class="md-nav__link">
         
@@ -5925,12 +7066,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/DiviserPourRegner/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Language/DiviserPourRegner/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -5953,6 +7116,8 @@
   
   
   
+  
+    
     
     
     
@@ -5960,11 +7125,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_3" >
-        
-          <label class="md-nav__link" for="__nav_5_4_3" id="__nav_5_4_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4_3" id="__nav_8_4_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -5975,8 +7139,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_3">
             <span class="md-nav__icon md-icon"></span>
             DocumentationEtBug
           </label>
@@ -5985,25 +7149,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Language/DocumentationEtBug/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -6027,6 +7172,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/DocumentationEtBug/Cours/" class="md-nav__link">
         
@@ -6047,12 +7193,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/DocumentationEtBug/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Language/DocumentationEtBug/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -6075,6 +7243,8 @@
   
   
   
+  
+    
     
     
     
@@ -6082,11 +7252,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_4" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_4" >
-        
-          <label class="md-nav__link" for="__nav_5_4_4" id="__nav_5_4_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4_4" id="__nav_8_4_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6097,8 +7266,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_4">
             <span class="md-nav__icon md-icon"></span>
             Paradigmes
           </label>
@@ -6107,25 +7276,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Language/Paradigmes/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -6149,6 +7299,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/Paradigmes/Cours/" class="md-nav__link">
         
@@ -6169,12 +7320,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/Paradigmes/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Language/Paradigmes/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -6197,6 +7370,8 @@
   
   
   
+  
+    
     
     
     
@@ -6204,11 +7379,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_5" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_5" >
-        
-          <label class="md-nav__link" for="__nav_5_4_5" id="__nav_5_4_5_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4_5" id="__nav_8_4_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6219,8 +7393,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_5">
             <span class="md-nav__icon md-icon"></span>
             ProgrammationDynamique
           </label>
@@ -6229,25 +7403,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Language/ProgrammationDynamique/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -6271,6 +7426,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/ProgrammationDynamique/Cours/" class="md-nav__link">
         
@@ -6291,12 +7447,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/ProgrammationDynamique/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Language/ProgrammationDynamique/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -6319,6 +7497,8 @@
   
   
   
+  
+    
     
     
     
@@ -6326,11 +7506,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_6" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_6" >
-        
-          <label class="md-nav__link" for="__nav_5_4_6" id="__nav_5_4_6_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4_6" id="__nav_8_4_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6341,8 +7520,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4_6">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_6">
             <span class="md-nav__icon md-icon"></span>
             ProgrammationOrienteObjet
           </label>
@@ -6351,25 +7530,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Language/ProgrammationOrienteObjet/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -6393,6 +7553,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/ProgrammationOrienteObjet/Cours/" class="md-nav__link">
         
@@ -6413,12 +7574,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/ProgrammationOrienteObjet/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Language/ProgrammationOrienteObjet/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -6441,6 +7624,8 @@
   
   
   
+  
+    
     
     
     
@@ -6448,11 +7633,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_7" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_7" >
-        
-          <label class="md-nav__link" for="__nav_5_4_7" id="__nav_5_4_7_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4_7" id="__nav_8_4_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6463,8 +7647,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4_7">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_7">
             <span class="md-nav__icon md-icon"></span>
             RechercheTextuelle
           </label>
@@ -6472,6 +7656,7 @@
             
               
                 
+  
   
   
   
@@ -6495,6 +7680,8 @@
   
   
   
+  
+    
     
     
     
@@ -6502,11 +7689,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_7_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_7_2" >
-        
-          <label class="md-nav__link" for="__nav_5_4_7_2" id="__nav_5_4_7_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4_7_2" id="__nav_8_4_7_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6517,8 +7703,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_4_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4_7_2">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_4_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_7_2">
             <span class="md-nav__icon md-icon"></span>
             Correction
           </label>
@@ -6527,25 +7713,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Language/RechercheTextuelle/Correction/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -6569,6 +7736,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/RechercheTextuelle/Correction/Cours/" class="md-nav__link">
         
@@ -6589,6 +7757,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/RechercheTextuelle/Correction/Exercices/" class="md-nav__link">
         
@@ -6604,6 +7773,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Language/RechercheTextuelle/Correction/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6625,6 +7815,8 @@
   
   
   
+  
+    
     
     
     
@@ -6632,11 +7824,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_8" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_8" >
-        
-          <label class="md-nav__link" for="__nav_5_4_8" id="__nav_5_4_8_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_4_8" id="__nav_8_4_8_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6647,8 +7838,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_4_8">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_8">
             <span class="md-nav__icon md-icon"></span>
             Recursivite
           </label>
@@ -6657,25 +7848,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/Language/Recursivite/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -6699,6 +7871,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/Recursivite/Cours/" class="md-nav__link">
         
@@ -6719,8 +7892,123 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/Language/Recursivite/Exercices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/Language/Recursivite/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_5" id="__nav_8_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RappelsPython
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_5">
+            <span class="md-nav__icon md-icon"></span>
+            RappelsPython
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/RappelsPython/Cours/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cours
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/RappelsPython/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6742,19 +8030,13 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
               
                 
   
   
   
+  
+    
     
     
     
@@ -6762,11 +8044,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
-        
-          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_6" id="__nav_8_6_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6777,8 +8058,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_6">
             <span class="md-nav__icon md-icon"></span>
             StructureDonnees
           </label>
@@ -6786,6 +8067,7 @@
             
               
                 
+  
   
   
   
@@ -6809,6 +8091,8 @@
   
   
   
+  
+    
     
     
     
@@ -6816,11 +8100,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_2" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_2" >
-        
-          <label class="md-nav__link" for="__nav_5_5_2" id="__nav_5_5_2_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_6_2" id="__nav_8_6_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6831,8 +8114,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_6_2">
             <span class="md-nav__icon md-icon"></span>
             Abr
           </label>
@@ -6840,6 +8123,7 @@
             
               
                 
+  
   
   
   
@@ -6871,6 +8155,8 @@
   
   
   
+  
+    
     
     
     
@@ -6878,11 +8164,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_3" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_3" >
-        
-          <label class="md-nav__link" for="__nav_5_5_3" id="__nav_5_5_3_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_6_3" id="__nav_8_6_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -6893,8 +8178,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_6_3">
             <span class="md-nav__icon md-icon"></span>
             Arbres
           </label>
@@ -6903,25 +8188,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/StructureDonnees/Arbres/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -6945,6 +8211,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/StructureDonnees/Arbres/Cours/" class="md-nav__link">
         
@@ -6965,12 +8232,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/StructureDonnees/Arbres/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/StructureDonnees/Arbres/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arbres
   </span>
   
 
@@ -6993,6 +8282,8 @@
   
   
   
+  
+    
     
     
     
@@ -7000,11 +8291,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_4" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_4" >
-        
-          <label class="md-nav__link" for="__nav_5_5_4" id="__nav_5_5_4_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_6_4" id="__nav_8_6_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -7015,8 +8305,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5_4">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_6_4">
             <span class="md-nav__icon md-icon"></span>
             Graphes
           </label>
@@ -7025,25 +8315,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/StructureDonnees/Graphes/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -7067,6 +8338,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/StructureDonnees/Graphes/Cours/" class="md-nav__link">
         
@@ -7087,12 +8359,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/StructureDonnees/Graphes/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/StructureDonnees/Graphes/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -7115,6 +8409,8 @@
   
   
   
+  
+    
     
     
     
@@ -7122,11 +8418,10 @@
       
         
         
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_6_5" >
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_5" >
-        
-          <label class="md-nav__link" for="__nav_5_5_5" id="__nav_5_5_5_label" tabindex="0">
+          
+          <label class="md-nav__link" for="__nav_8_6_5" id="__nav_8_6_5_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -7137,8 +8432,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_5_5">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_6_5">
             <span class="md-nav__icon md-icon"></span>
             StructuresLineaires
           </label>
@@ -7147,25 +8442,6 @@
               
                 
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terminale/StructureDonnees/StructuresLineaires/Activite/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Activite
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -7189,6 +8465,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/StructureDonnees/StructuresLineaires/Cours/" class="md-nav__link">
         
@@ -7209,12 +8486,34 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../Terminale/StructureDonnees/StructuresLineaires/Exercices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Exercices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Terminale/StructureDonnees/StructuresLineaires/Manuel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manuel
   </span>
   
 
@@ -7274,16 +8573,170 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#les-algorithmes-de-tri" class="md-nav__link">
-    Les algorithmes de tri
+  <a href="#cours" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cours
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cours">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-rentree" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Rentrée
+    </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#interactions-homme-machine-sur-le-web" class="md-nav__link">
-    Intéractions Homme-Machine sur le Web
+        
+          <li class="md-nav__item">
+  <a href="#2-types-et-valeurs-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Types et valeurs de base
+    </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-langages-et-programmation-les-constructions-elementaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Langages et programmation - Les constructions élémentaires
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-principes-darchitecture-des-machines" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Principes d'architecture des machines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-projet-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Projet 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-langage-les-types-construits" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Langage - Les types construits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-interactions-homme-machine-sur-le-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Interactions Homme-Machine sur le Web
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-projet-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Projet 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-algorithme-des-k-plus-proches-voisins" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Algorithme des k-plus proches voisins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-dictonnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Dictonnaires
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-reseaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Réseaux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-les-tris" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Les Tris
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-traitement-de-donnees-en-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Traitement de données en tables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-projet-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Projet 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-algorithmes-gloutons" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Algorithmes gloutons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-recherche-dichotomique" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Recherche dichotomique
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-projet-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Projet 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -7304,12 +8757,79 @@
 
 
 <h1 id="cours-de-nsi-premiere">Cours de NSI - Premiere</h1>
-<h2 id="les-algorithmes-de-tri">Les algorithmes de tri</h2>
-<p>Markdown : <a href="Algorithmique/Tris/Cours/">Cours</a>
-Pdf : <a href="Algorithmique/Tris/CoursAlgorithmesDeTri.pdf">Cours</a></p>
-<h2 id="interactions-homme-machine-sur-le-web">Intéractions Homme-Machine sur le Web</h2>
-<p>Markdown : <a href="IhmWeb/Cours/">Cours</a>
-Pdf : <a href="IhmWeb/IhmWeb.pdf">Cours</a></p>
+<h2 id="cours">Cours</h2>
+<h3 id="1-rentree">1. <em>Rentrée</em></h3>
+<p>Cours : <a href="AutresRessources/Rentree/Cours.md">Web</a> <a href="AutresRessources/Rentree/Cours.pdf">Pdf</a></p>
+<h3 id="2-types-et-valeurs-de-base">2. <em>Types et valeurs de base</em></h3>
+<p>Activité : <a href="RepresentationDonnes/Activite/">Web</a> <a href="RepresentationDonnes/Activite.pdf">Pdf</a></p>
+<p>Cours : <a href="RepresentationDonnes/Cours/">Web</a> <a href="RepresentationDonnes/Cours.pdf">Pdf</a></p>
+<p>Exercice : <a href="RepresentationDonnes/Exercices/">Web</a> <a href="RepresentationDonnes/Exercices.pdf">Pdf</a></p>
+<h3 id="3-langages-et-programmation-les-constructions-elementaires">3. <em>Langages et programmation - Les constructions élémentaires</em></h3>
+<p>Cours : <a href="Langage/Cours/">Web</a> <a href="Langage/Cours.pdf">Pdf</a></p>
+<p>//TODO
+Exercice : <a href="Langage/Exercices/">Web</a> <a href="Langage/Exercices.pdf">Pdf</a></p>
+<h3 id="4-principes-darchitecture-des-machines">4. <em>Principes d'architecture des machines</em></h3>
+<p>//TODO
+Cours : <a href="Architecture/Os/Cours/">Web</a> <a href="Architecture/Os/Cours.pdf">Pdf</a></p>
+<p>//TODO
+Activité : <a href="Architecture/Os/Activite.md">Web</a> <a href="Architecture/Os/Activite.pdf">Pdf</a></p>
+<h3 id="5-projet-1">5. Projet 1</h3>
+<p>//TODO</p>
+<h3 id="6-langage-les-types-construits">6. <em>Langage - Les types construits</em></h3>
+<p>Cours : <a href="TypesConstruits/Cours/">Web</a> <a href="TypesConstruits/Cours.pdf">Pdf</a></p>
+<p>//TODO
+Exercice : <a href="TypesConstruits/Exercices/">Web</a> <a href="TypesConstruits/Exercices.pdf">Pdf</a></p>
+<h3 id="7-interactions-homme-machine-sur-le-web">7. <em>Interactions Homme-Machine sur le Web</em></h3>
+<p>Cours : <a href="IhmWeb/Cours/">Web</a> <a href="IhmWeb/Cours.pdf">Pdf</a></p>
+<p>//TODO
+Exercice : <a href="IhmWeb/Exercices/">Web</a> <a href="IhmWeb/Exercices.pdf">Pdf</a></p>
+<p>//TODO
+Activité : <a href="IhmWeb/Activite/">Web</a> <a href="IhmWeb/Activite.pdf">Pdf</a></p>
+<h3 id="8-projet-2">8. Projet 2</h3>
+<p>//TODO</p>
+<h3 id="9-algorithme-des-k-plus-proches-voisins">9. <em>Algorithme des k-plus proches voisins</em></h3>
+<p>// TODO
+Cours : <a href="Algorithmique/PlusProchesVoisins/Cours/">Web</a> <a href="Algorithmique/PlusProchesVoisins/Cours.pdf">Pdf</a></p>
+<h3 id="10-dictonnaires">10. <em>Dictonnaires</em></h3>
+<p>// TODO
+Cours : <a href="Dictonnaires/Cours.md">Web</a> <a href="Dictonnaires/Cours.pdf">Pdf</a></p>
+<p>// TODO
+Exercice : <a href="Dictonnaires/Exercices.md">Web</a> <a href="Dictonnaires/Exercices.pdf">Pdf</a></p>
+<h3 id="11-reseaux">11. <em>Réseaux</em></h3>
+<p>// TODO
+Cours : <a href="Architecture/Reseaux/Cours/">Web</a> <a href="Architecture/Reseaux/Cours.pdf">Pdf</a></p>
+<p>// TODO
+Exercice : <a href="Architecture/Reseaux/Exercices/">Web</a> <a href="Architecture/Reseaux/Exercices.pdf">Pdf</a></p>
+<h3 id="12-les-tris">12. <em>Les Tris</em></h3>
+<p>Cours : <a href="Algorithmique/Tris/Cours/">Web</a> <a href="Algorithmique/Tris/Cours.pdf">Pdf</a></p>
+<p>// TODO
+Exercice : <a href="Algorithmique/Tris/Exercices/">Web</a> <a href="Algorithmique/Tris/Exercices.pdf">Pdf</a></p>
+<h3 id="13-traitement-de-donnees-en-tables">13. <em>Traitement de données en tables</em></h3>
+<p>// TODO
+Cours : <a href="TraitementDonnesTables/Cours/">Web</a> <a href="TraitementDonnesTables/Cours.pdf">Pdf</a></p>
+<p>// TODO
+Exercice : <a href="TraitementDonnesTables/Exercices/">Web</a> <a href="TraitementDonnesTables/Exercices.pdf">Pdf</a></p>
+<h3 id="14-projet-3">14. <em>Projet 3</em></h3>
+<p>// TODO</p>
+<h3 id="15-algorithmes-gloutons">15. <em>Algorithmes gloutons</em></h3>
+<p>// TODO
+Cours : <a href="Algorithmique/Gloutons/Cours/">Web</a> <a href="Algorithmique/Gloutons/Cours.pdf">Pdf</a></p>
+<p>// TODO
+Exercice : <a href="Algorithmique/Gloutons/Exercices/">Web</a> <a href="Algorithmique/Gloutons/Exercices.pdf">Pdf</a></p>
+<h3 id="16-recherche-dichotomique">16. <em>Recherche dichotomique</em></h3>
+<p>// TODO
+Cours : <a href="Algorithmique/RechercheDichotomique/Cours/">Web</a> <a href="Algorithmique/RechercheDichotomique/Cours.pdf">Pdf</a></p>
+<p>// TODO
+Exercice : <a href="Algorithmique/RechercheDichotomique/Exercices/">Web</a> <a href="Algorithmique/RechercheDichotomique/Exercices.pdf">Pdf</a></p>
+<h3 id="17-projet-4">17. <em>Projet 4</em></h3>
+<p>// TODO</p>
+
+
+
+
+
+
+
 
 
 
@@ -7322,6 +8842,7 @@ Pdf : <a href="IhmWeb/IhmWeb.pdf">Cours</a></p>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -7349,10 +8870,11 @@ Pdf : <a href="IhmWeb/IhmWeb.pdf">Cours</a></p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
       
     
   </body>

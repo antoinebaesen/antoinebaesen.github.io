@@ -1,0 +1,25 @@
+.right {
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.left {
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.region {
+    background-color: #333333;
+    padding: 10%;
+    color: #ffffff;
+}
+
+/* Path: public/docs/Src/styles.css */
