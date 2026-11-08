@@ -1,1 +1,0 @@
-print("Bravo, tu as réussi à exécuter ton premier programme Python !")
